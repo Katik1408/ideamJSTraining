@@ -1,0 +1,6 @@
+How to Solve the Questions from the Questions.txt file
+
+
+1. You need to create a JavaScript file for each separate part and solve the questions there.
+2. Use Comments in JS to provide the name of the question and then write the code below it. 
+3. Please do not use ChatGPT or any AI Tool available.
