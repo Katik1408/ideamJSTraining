@@ -354,28 +354,119 @@ let index = arr.indexOf('Kartik');
 // console.log(num)
 
 
-let fruits = ['Apple','Banana','Orange','Kiwi'];
+// let fruits = ['Apple','Banana','Orange','Kiwi'];
 
-fruits.splice(1,1,'Watermelon');
-console.log(fruits);
+// fruits.splice(1,1,'Watermelon');
+// console.log(fruits);
 
-let data = [
-    {name:'Kartik',id:1,address:'Pune'},
-    {name:'Rahul',id:2,address:'Bangalore'},
-    {name:'Shubham',id:3,address:'Mumbai'}
-]
+// let data = [
+//     {name:'Kartik',id:1,address:'Pune'},
+//     {name:'Rahul',id:2,address:'Bangalore'},
+//     {name:'Shubham',id:3,address:'Mumbai'}
+// ]
 
-console.log(data);
+//console.log(data);
+
+// Loops
+/**
+ * 1. while
+ * 2. Do While
+ * 3. for Loop
+ * 4. for in Loop
+ * 5. for of Loop
+ * 6. forEach Loop
+ */
+
+// 1. while Loop
+
+/**
+ * 
+ *  initialize a variable
+ * while(<condition>){
+ * 
+ * Inc/Dec
+ * }
+ */
+
+// let i = 6;
+
+// while(i<5){
+//     console.log('value of i is ' , i);
+//     i++;
+// }
+
+// 2. Do while loop
+
+/**
+ * 
+ * initialize a var
+ * 
+ * do {
+ * Inc/Dec
+ * }while(<condition>)
+ * 
+ */
+
+// let i = 6;
+
+// do {
+//     console.log('value of i using do while is ' , i)
+//     i++;
+// }while(i<5);
+
+// 3. for Loop
+
+/**
+ * 
+ * for (init;condition;inc/dec){
+ * 
+ * }
+ * 
+ */
+
+// i = i - 1;
+
+// debugger;
+// for(let i = 10; i > 0 ; i--){
+//     console.log('value of i is ', i );
+// }
 
 
 
 
 
+// let person = { name:'Kartik', age: 30, city:'Pune'}
+
+// for in loop
+/**
+ * 
+ * 
+ * for (let key in object){
+ * 
+ * }
+ * 
+ */
 
 
+// for (let key in person ){
+//     console.log('key is ', key + ' value is ' , person[key]);
+// }
+
+// 5. for of Loop
 
 
+let fruits = ['Apple','Orange','Banana','WaterMelon'];
 
 
+/**
+ * 
+ * for (let index in Arrrayofitems){
+ * 
+ * }
+ * 
+ * 
+ */
 
-
+for(let fruit in fruits){
+    console.log('index is ', fruit + ' value is ', fruits[fruit]);
+}
