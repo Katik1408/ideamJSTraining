@@ -1,0 +1,70 @@
+
+Part 1: Variables, alert, prompt, confirm
+1. Declare a variable name and assign your name to it. Show it using alert().
+2. Ask the user for their age using prompt(). Store it in a variable and display it back using alert().
+3. Use confirm() to ask the user: "Do you like JavaScript?". Store the result in a variable and display it in the console.
+4. Write a script where you:
+    * Use prompt() to ask the user for two numbers.
+    * Store them in variables.
+    * Perform Arithmetic operations (Add Substract Divide Multiply and Modulo) and show the result in an alert.
+
+Part 2: Conditional Statements
+1. Ask the user for a number using prompt(). Check if it’s even or odd, and show the result in an alert.
+2. Write a script that asks the user for their marks (out of 100).
+    * If marks ≥ 90 → Show "Grade A"
+    * If marks ≥ 75 → Show "Grade B"
+    * If marks ≥ 50 → Show "Grade C"
+    * Otherwise → Show "Fail"
+3. Use prompt() to ask the user for a day number (1–7). Use a switch statement to print the day name (e.g., 1 → Monday).
+4. Use a ternary operator to ask the user for their age.
+    * If age ≥ 18 → "You are an adult"
+    * Else → "You are a minor"
+5. Ask the user to enter a password.
+    * If the password matches "12345", show "Login Successful".
+    * Otherwise show "Wrong Password".
+
+6. Ask the user for a number.
+    * If the number is positive
+        * Check if it’s also even or odd.
+    * Else if the number is negative
+        * Show "Negative number".
+    * Else show "Number is zero".
+7. Ask the user for their age and whether they have a driving license (yes/no).
+* If age ≥ 18
+    * If license is "yes" → Show "You can drive"
+    * Else → Show "You are eligible by age but don’t have a license"
+    * Else → Show "You are underage"
+8. Ask the user to enter username and password.
+    * If username = "admin"
+        * If password = "1234" → Show "Welcome Admin"
+        * Else → Show "Wrong password"
+    * Else → Show "Invalid username"
+
+
+Part 3 : Arrays
+
+1. Rearranging with splice()
+    * Start with an array ["pen", "book", "eraser", "scale"].
+    * Remove "eraser" and insert "pencil" at the same place.
+    * Show the updated array.
+
+2. Finding the maximum
+    * Given [10, 45, 67, 23, 89, 12], find the largest number using Math.max.apply(null, array).
+3. String to Array & Back
+    * Take a string "apple,banana,orange".
+    * Convert it into an array using split().
+    * Then convert back into a string "apple | banana | orange" using join().
+
+3. Create an array of 5 colors. Show the 3rd color using its index.
+4. Make an array of numbers [10, 20, 30, 40, 50]. Find the position of 30 using
+5. Create an array of names ["Amit", "Rahul", "Sneha", "Priya"].
+    * Add one more name at the end using push().
+    * Remove the first name using shift().
+    * Show the final array in the console.
+6. Make an array of numbers [100, 200, 300].
+    * Use concat() to add another array [400, 500].
+    * Show the new array in the console.
+7. Create an array ["HTML", "CSS", "JavaScript"]. Use reverse() to reverse the order. Show it in an alert.
+8. Create an array of numbers [2, 4, 6, 8, 10]. Use every() to check if all numbers are even.
+9. Create an array of ages [12, 18, 20, 25]. Use some() to check if there’s at least one person under 18.
+
