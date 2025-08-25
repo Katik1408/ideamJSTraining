@@ -436,6 +436,8 @@ let index = arr.indexOf('Kartik');
 
 
 // let person = { name:'Kartik', age: 30, city:'Pune'}
+// let person2 = {};
+
 
 // for in loop
 /**
@@ -455,18 +457,131 @@ let index = arr.indexOf('Kartik');
 // 5. for of Loop
 
 
-let fruits = ['Apple','Orange','Banana','WaterMelon'];
+// let fruits = ['Apple','Orange','Banana','WaterMelon'];
 
 
+// /**
+//  * 
+//  * for (let value of Arrrayofitems){
+//  * 
+//  * }
+//  * 
+//  * 
+//  */
+
+// for(let fruit in fruits){
+//     console.log('index is ', fruit + ' value is ', fruits[fruit]);
+// }// Not recommended
+
+
+// for (let value of fruits){
+//     console.log(value);
+// } // Recommended
+
+
+
+// let data = [
+//     {name:'Kartik',id:1,address:'Pune'},
+//     {name:'Rahul',id:2,address:'Bangalore'},
+//     {name:'Shubham',id:3,address:'Mumbai'}
+// ]
+
+
+// for(let person of data){
+//     console.log(person.name, person.address);
+// }
+
+
+// 6. forEach Loop
+
+// let fruits = ['Apple','Orange','Banana','WaterMelon'];
+
+// fruits.forEach(s => {
+//     console.log(s)
+// })
+
+
+
+// Functions
 /**
  * 
- * for (let index in Arrrayofitems){
+ * 
+ *  One Function should do one specific.It should not do more than one task which is assigned to it
+ */
+
+// 2 Types of Functions
+/**
+ * 
+ * Inbuilt / Predefined Functions
+ * 
+ * User Defined Functions
+ */
+
+// How to create a fn
+/**
+ *  () ---> parenthesis
+ *  function nameOfFunction(arguments){
+ * 
+ * 
+ * 
  * 
  * }
  * 
  * 
+ * nameOfFunction(parameters)
+ * 
+ * 
  */
 
-for(let fruit in fruits){
-    console.log('index is ', fruit + ' value is ', fruits[fruit]);
+
+// function add(){
+//     console.log('Addition Function');
+// }
+
+// add();
+
+
+function substract(a,b){
+    let c = a-b;
+    console.log(c);
 }
+
+// substract(10,5);
+
+//Camel Casing getDataFromDatabase() JS , Java , python
+//Pascal Casing GetDataFromDatabase C#
+
+function getDataFromDatabase(){
+
+}
+
+
+// function add(a,b){
+
+//     let c = a + b;
+
+//     let subs = a - b;
+
+//     console.log(subs);
+//     return c;
+// }
+
+// let d = add(10,5);
+
+// console.log(d);
+
+
+// Arrow Function  --> ES6
+
+
+function add(a,b){
+    let c = a + b;
+    return c;
+}
+
+
+let add = (a,b) =>  a + b 
+
+let value = add(5,6);
+
+console.log(value)
