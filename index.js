@@ -3,8 +3,8 @@
 // // // console.log('Hello from js')
 
 
-// // // //window
 
+// // // //window
 
 
 
@@ -580,8 +580,61 @@ function add(a,b){
 }
 
 
-let add = (a,b) =>  a + b 
+
+
+// let add = (a,b) =>  a + b 
 
 let value = add(5,6);
 
-console.log(value)
+// console.log(value)
+
+// CallBack
+
+// function show(value){
+// console.log(value);
+// }
+
+
+// function call(somefn){
+    
+//     somefn(name);
+// }
+
+// function exec(){
+//     call(show('Kartik'))
+// }
+
+// debugger;
+// exec();
+
+function proccessData(data){
+    console.log('processing data....', data);
+    return data;
+}
+
+function showData(data){
+console.log('Showing data... ', data);
+}
+
+function getData(){
+    return [
+            {name:'Kartik',id:1,address:'Pune'},
+            {name:'Rahul',id:2,address:'Bangalore'},
+            {name:'Shubham',id:3,address:'Mumbai'}
+        ];
+}
+
+function feature(callback){
+    console.log('Inside the feature function')
+    callback();
+}
+
+// Anonymous Function
+ //() => console.log();
+debugger;
+
+feature( ()=>{
+    let processed = proccessData(getData());
+    showData(processed);
+} )
+
