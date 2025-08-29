@@ -29,11 +29,15 @@
 
         <hr />
     <div class="container">
-        <form action="success.html">
+        <form action="success.html" onsubmit="return validate();" >
 
             <div class="row">
-                <div class="col-6">Name</div>
-                <div class="col-6"> <input onblur="customblur()" name="name" onfocus="show()" class="form-control" type="text">  </div>
+                <div class="col-6">Name <span style="color:red" >*</span> </div>
+
+                <div class="col-6"> <input onblur="customblur()" required  id="name"  name="name" onfocus="show()" class="form-control" type="text"> 
+                    <span id="error" style="color:red;display: none;" >Name should be more than 3 characters </span>
+
+                </div>
             </div>
             <div class="row spacer">
                 <div class="col-6">Email ID</div>

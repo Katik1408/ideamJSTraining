@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Page</title>
+    <title>Next</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
 </head>
 <body>
-
-    <div class="text-center" style="margin-top: 100px;color: #43A047;">
-        Successfully Submitted
-    </div>
-
+    
+    <h1>Hello from New Page</h1>
 
     <div class="container">
         <div class="row">
@@ -27,56 +24,24 @@
             <div class="col-6">Email ID</div>
             <div class="col-6"> <span id="emailId" ></span>  </div>
         </div>
-
-        <div class="row">
-            <div class="col-12">
-                <a href="next.html" class="btn btn-primary" > Go To Next Page </a>
-            </div>
-        </div>
-
     </div>
 
-    
-
-    
 </body>
 
+<script lang="javascript">
 
+let name = localStorage.getItem('name');
+let emailId = localStorage.getItem('emailId');
 
-
-<script lang="javascript" >
-
-    let queryString = window.location.search
-
-    console.log(queryString)
-    
-    let qP = new URLSearchParams(queryString)
-
-    let name = qP.get('name');
-
-    let eid = qP.get('eid');
-
-    console.log(name)
-console.log(eid)
 
 document.getElementById('name').innerHTML = name
 
 
-document.getElementById('emailId').innerHTML = eid
-
-//LocalStorage 
-
-localStorage.setItem('name',name)
-localStorage.setItem('emailId',eid);
+document.getElementById('emailId').innerHTML = emailId
 
 
 
-sessionStorage.setItem('name',name)
-sessionStorage.setItem('emailId',eid)
 
-
-    
-</script>   
-
+</script>
 
 </html>

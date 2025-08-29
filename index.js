@@ -651,3 +651,24 @@ function show(){
 function customblur(){
     console.log('This is event Blur!')
 }
+
+
+function validate(){
+
+    let name = document.getElementById('name');
+
+    console.log(name.value);
+    
+    if(name.value === ''){
+        return false 
+    }
+
+    if(name.value.length <3){
+        console.log('Name should be more than 3 characters');
+
+        document.getElementById('error').style.display = 'block';
+
+        return false;
+    }
+    
+    }
