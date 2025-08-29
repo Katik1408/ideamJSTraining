@@ -607,34 +607,47 @@ let value = add(5,6);
 // debugger;
 // exec();
 
-function proccessData(data){
-    console.log('processing data....', data);
-    return data;
+// function proccessData(data){
+//     console.log('processing data....', data);
+//     return data;
+// }
+
+// function showData(data){
+// console.log('Showing data... ', data);
+// }
+
+// function getData(){
+//     return [
+//             {name:'Kartik',id:1,address:'Pune'},
+//             {name:'Rahul',id:2,address:'Bangalore'},
+//             {name:'Shubham',id:3,address:'Mumbai'}
+//         ];
+// }
+
+// function feature(callback){
+//     console.log('Inside the feature function')
+//     callback();
+// }
+
+// // Anonymous Function
+//  //() => console.log();
+// debugger;
+
+// feature( ()=>{
+//     let processed = proccessData(getData());
+//     showData(processed);
+// } )
+
+// Events in Javascripts
+
+function add(){
+
 }
 
-function showData(data){
-console.log('Showing data... ', data);
+function show(){
+    console.log('onFocus clicked!')
 }
 
-function getData(){
-    return [
-            {name:'Kartik',id:1,address:'Pune'},
-            {name:'Rahul',id:2,address:'Bangalore'},
-            {name:'Shubham',id:3,address:'Mumbai'}
-        ];
+function customblur(){
+    console.log('This is event Blur!')
 }
-
-function feature(callback){
-    console.log('Inside the feature function')
-    callback();
-}
-
-// Anonymous Function
- //() => console.log();
-debugger;
-
-feature( ()=>{
-    let processed = proccessData(getData());
-    showData(processed);
-} )
-
