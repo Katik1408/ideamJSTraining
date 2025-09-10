@@ -1,764 +1,813 @@
 
-// // // // //Console log is written
-// // // // console.log('Hello from js')
+// // // // // //Console log is written
+// // // // // console.log('Hello from js')
 
 
 
-// // // // //window
+// // // // // //window
 
 
 
-// // // // //Multi Line Comment
+// // // // // //Multi Line Comment
 
-// // // // /**
-// // // //  * 
-// // // //  * 
-// // // //  * 
-// // // //  * 
-// // // //  * 
-// // // //  * 
-// // // //  * 
-// // // //  */
+// // // // // /**
+// // // // //  * 
+// // // // //  * 
+// // // // //  * 
+// // // // //  * 
+// // // // //  * 
+// // // // //  * 
+// // // // //  * 
+// // // // //  */
 
-// // // // // Alert Box
+// // // // // // Alert Box
 
-// // // // // alert('Form is submitted successfully')
+// // // // // // alert('Form is submitted successfully')
 
-// // // // // alert('Error Occured. Please Try again Later')
+// // // // // // alert('Error Occured. Please Try again Later')
 
-// // // // // Confirm Box
+// // // // // // Confirm Box
 
-// // // // // confirm('Do you want to leave or stay on the page?')
+// // // // // // confirm('Do you want to leave or stay on the page?')
+// // // // // // console.log(confirm('Do you agree with Terms and Conditions ?'))
+
+// // // // // // Prompt
+// // // // // // prompt('Sample data','default value')
+// // // // // // console.log(prompt('Enter your age'))
+
+// // // // // // ctrl K+C   cmd K+C Comment
+
+// // // // // // Uncomment ctrl K+U cmd K+U
+
+
+// // // // // //Variables
+
+// // // // // // var let const
+
+// // // // // // var a = 10; // Terminator
+
+// // // // // // var name = 'Kartik';
+
+// // // // // // let b = 20;
+
+// // // // // // console.log(b)
+
+// // // // // // b = 35;
+
+// // // // // // console.log(a);
+
+// // // // // // console.log(b);
+
+
+
+
+
+// // // // // // const fname = 'Kartik'   // constant
+
+// // // // // // fname = 'Rahul'
+
+// // // // // // console.log(name)
+
+
+// // // // // // const
+
+// // // // // // DataType
+
+
+
+// // // // // // let a = 10;
+
+// // // // // // a = 'Kartik'
+
+// // // // // // console.log(a);
+
+
+// // // // // // const fname = 'Kartik';
+
+// // // // // // // fname = 10;
+
+// // // // // // console.log(fname)
+
+
+// // // // // // DataType
+
+// // // // // let name = 'Kartik'; // String
+
+// // // // // let id = 10; // Number
+
+// // // // // let isStudent = false; // Boolean
+
+// // // // // let isEmployed = undefined; // undefined
+
+// // // // // let sname = null; // Object
+
+// // // // // console.log(typeof name);
+// // // // // console.log(typeof id);
+// // // // // console.log(typeof isStudent);
+// // // // // console.log(typeof isEmployed);
+
+// // // // // console.log('Type of sname',typeof sname);
+
+// // // // // // let p = {key : value}
+// // // // // let person = {
+// // // // //     id: '1',
+// // // // //     fname:'Rahul',
+// // // // //     sname : 'Singh',
+// // // // //     college : 'Christ',
+// // // // //     address : 'St1 area colony city ',
+// // // // //     address : {
+// // // // //         firstline : 'streetname',
+// // // // //         secondline : 'Area',
+// // // // //         state: 'MH'
+// // // // //     },
+// // // // //     phone: 8982,
+// // // // //     isEmployed : false
+// // // // // };  // JSON  --> JavaScript Object Notation
+
+
+// // // // // console.log(person)
+
+
+// // // // // console.log('Type of Person',typeof person);
+
+
+
+// // // // // let today = new Date();
+
+// // // // // console.log(today)
+
+// // // // // console.log('type of today ' + typeof today)
+
+
+// // // // // COnfirm Box
+// // // // // let selectedValue = confirm('Do you want to leave or stay on the page?');
+
+// // // // console.log(selectedValue);
+
 // // // // // console.log(confirm('Do you agree with Terms and Conditions ?'))
 
-// // // // // Prompt
-// // // // // prompt('Sample data','default value')
-// // // // // console.log(prompt('Enter your age'))
+// // // // // Conditional Statements
 
-// // // // // ctrl K+C   cmd K+C Comment
+// // // // // if , if else , if else if else if -- ladder  , switch , Nested if , Ternary operator
 
-// // // // // Uncomment ctrl K+U cmd K+U
-
-
-// // // // //Variables
-
-// // // // // var let const
-
-// // // // // var a = 10; // Terminator
-
-// // // // // var name = 'Kartik';
-
-// // // // // let b = 20;
-
-// // // // // console.log(b)
-
-// // // // // b = 35;
-
-// // // // // console.log(a);
-
-// // // // // console.log(b);
+// // // // // if(selectedValue) {
+// // // // //     console.log('User selected OK');
+// // // // // }
 
 
 
+// // // // console.log('After if');
 
 
-// // // // // const fname = 'Kartik'   // constant
-
-// // // // // fname = 'Rahul'
-
-// // // // // console.log(name)
-
-
-// // // // // const
-
-// // // // // DataType
-
-
-
-// // // // // let a = 10;
-
-// // // // // a = 'Kartik'
-
-// // // // // console.log(a);
-
-
-// // // // // const fname = 'Kartik';
-
-// // // // // // fname = 10;
-
-// // // // // console.log(fname)
-
-
-// // // // // DataType
-
-// // // // let name = 'Kartik'; // String
-
-// // // // let id = 10; // Number
-
-// // // // let isStudent = false; // Boolean
-
-// // // // let isEmployed = undefined; // undefined
-
-// // // // let sname = null; // Object
-
-// // // // console.log(typeof name);
-// // // // console.log(typeof id);
-// // // // console.log(typeof isStudent);
-// // // // console.log(typeof isEmployed);
-
-// // // // console.log('Type of sname',typeof sname);
-
-// // // // // let p = {key : value}
-// // // // let person = {
-// // // //     id: '1',
-// // // //     fname:'Rahul',
-// // // //     sname : 'Singh',
-// // // //     college : 'Christ',
-// // // //     address : 'St1 area colony city ',
-// // // //     address : {
-// // // //         firstline : 'streetname',
-// // // //         secondline : 'Area',
-// // // //         state: 'MH'
-// // // //     },
-// // // //     phone: 8982,
-// // // //     isEmployed : false
-// // // // };  // JSON  --> JavaScript Object Notation
-
-
-// // // // console.log(person)
-
-
-// // // // console.log('Type of Person',typeof person);
-
-
-
-// // // // let today = new Date();
-
-// // // // console.log(today)
-
-// // // // console.log('type of today ' + typeof today)
-
-
-// // // // COnfirm Box
-// // // // let selectedValue = confirm('Do you want to leave or stay on the page?');
-
-// // // console.log(selectedValue);
-
-// // // // console.log(confirm('Do you agree with Terms and Conditions ?'))
-
-// // // // Conditional Statements
-
-// // // // if , if else , if else if else if -- ladder  , switch , Nested if , Ternary operator
-
-// // // // if(selectedValue) {
-// // // //     console.log('User selected OK');
+// // // // if(selectedValue){
+// // // //     console.log('User Selected OK')
+// // // // }
+// // // // else {
+// // // // console.log('User selected cancel');
 // // // // }
 
 
 
-// // // console.log('After if');
+// // // // let a = 5; // Number 
+
+// // // // if( a === '5' ){
+// // // // console.log('It contains 5' );
+// // // // }
+// // // // else{
+// // // //     console.log('It doesnt contain 5')
+// // // // }
+
+// // // // == checks the value
+// // // // === checks the value and the type both
+
+// // // // let marks = 55;
+
+// // // // if(marks >= 90){
+// // // // console.log('Grade : A')
+// // // // }
+// // // // else if (marks >= 80){
+// // // //     console.log('Grade is B');
+// // // // }
+// // // // else if(marks >= 60) {
+// // // //     console.log('Grade is C')
+// // // // }
+// // // // else {
+// // // //     console.log('Grade is D');
+// // // // }
 
 
-// // // if(selectedValue){
-// // //     console.log('User Selected OK')
-// // // }
-// // // else {
-// // // console.log('User selected cancel');
-// // // }
+// // // // switch
+// // // // let day = 6;
+// // // // switch(day){
 
-
-
-// // // let a = 5; // Number 
-
-// // // if( a === '5' ){
-// // // console.log('It contains 5' );
-// // // }
-// // // else{
-// // //     console.log('It doesnt contain 5')
-// // // }
-
-// // // == checks the value
-// // // === checks the value and the type both
-
-// // // let marks = 55;
-
-// // // if(marks >= 90){
-// // // console.log('Grade : A')
-// // // }
-// // // else if (marks >= 80){
-// // //     console.log('Grade is B');
-// // // }
-// // // else if(marks >= 60) {
-// // //     console.log('Grade is C')
-// // // }
-// // // else {
-// // //     console.log('Grade is D');
-// // // }
-
-
-// // // switch
-// // // let day = 6;
-// // // switch(day){
-
-// // //     case 1:
-// // //         console.log('Monday')
-// // //         break;
-// // //     case 2:
-// // //         console.log('Tuesday')
-// // //         break;
+// // // //     case 1:
+// // // //         console.log('Monday')
+// // // //         break;
+// // // //     case 2:
+// // // //         console.log('Tuesday')
+// // // //         break;
         
-// // //     case 3:
-// // //         console.log('Wednesday')
-// // //         break;
+// // // //     case 3:
+// // // //         console.log('Wednesday')
+// // // //         break;
        
-// // //     default:
-// // //         console.log('Some other day')        
-// // // }
+// // // //     default:
+// // // //         console.log('Some other day')        
+// // // // }
 
 
-// // // Nested if 
+// // // // Nested if 
+
+// // // // let user = 'user1'
+// // // // let pwd = 'pwd';
+
+// // // // let isAuthorized = false;
+
+// // // // if(pwd === 'pwd'){
+    
+// // // //     if(isAuthorized){
+// // // //         console.log('Welcome User',user)
+// // // //         if(false){
+
+// // // //         }
+// // // //         else {
+// // // //             if(true){
+
+// // // //             }else {
+
+// // // //             }
+// // // //         }
+// // // //     }
+// // // //     else {
+// // // //         console.log('You are not Authorized to access this page');
+// // // //     }
+// // // // }
+// // // // else {
+// // // //     console.log('Incorrect Password');
+// // // // }
+
+// // // // Ternary Operator
+
+// // // let a = 5;
+
+// // // // if(a ===5 ){
+// // // //     console.log('It contains 5')
+// // // // }
+// // // // else {
+// // // //     console.log('It doesnt contain 5');
+// // // // }
+
+// // // // (a === 5 ) ? console.log('It contians 5')  : (a==6) ? console.log('it contains 6' ) 
+// // // // : console.log('it doesnt contains 5 and 6');
+
+
+// // // // AND and OR Operator 
 
 // // // let user = 'user1'
 // // // let pwd = 'pwd';
 
-// // // let isAuthorized = false;
+// // // let isAuthorized = true;
 
-// // // if(pwd === 'pwd'){
-    
-// // //     if(isAuthorized){
-// // //         console.log('Welcome User',user)
-// // //         if(false){
 
-// // //         }
-// // //         else {
-// // //             if(true){
-
-// // //             }else {
-
-// // //             }
-// // //         }
-// // //     }
-// // //     else {
-// // //         console.log('You are not Authorized to access this page');
-// // //     }
-// // // }
-// // // else {
-// // //     console.log('Incorrect Password');
+// // // if(pwd === 'pwd' && isAuthorized){
+// // //     console.log('Welcome User AND OPERATOR',user)
 // // // }
 
-// // // Ternary Operator
 
-// // let a = 5;
+// // // // AND --> 
 
-// // // if(a ===5 ){
-// // //     console.log('It contains 5')
+// // // // T T --> T
+// // // // F T --> F
+// // // // T F --> F
+// // // // F F --> F
+
+// // // if(pwd ==='pwd1' || isAuthorized ){
+// // //     console.log('Welcome user OR OPERATOR ' + user)
 // // // }
-// // // else {
-// // //     console.log('It doesnt contain 5');
-// // // }
 
-// // // (a === 5 ) ? console.log('It contians 5')  : (a==6) ? console.log('it contains 6' ) 
-// // // : console.log('it doesnt contains 5 and 6');
 
+// // // // OR 
 
-// // // AND and OR Operator 
+// // // // T T --> T
+// // // // F T --> T
+// // // // T F --> T
+// // // // F F --> F
 
-// // let user = 'user1'
-// // let pwd = 'pwd';
 
-// // let isAuthorized = true;
+// // // Arrays in JS
 
+// // let a = 10;
+// // let b = 20;
+// // let c = 30;
 
-// // if(pwd === 'pwd' && isAuthorized){
-// //     console.log('Welcome User AND OPERATOR',user)
-// // }
+// // let name ='Kartik';
 
+// // let arr = [10,20,30,40,50,'Kartik',true];
 
-// // // AND --> 
+// // // console.log(arr);
 
-// // // T T --> T
-// // // F T --> F
-// // // T F --> F
-// // // F F --> F
+// // // console.log(arr[4]);
 
-// // if(pwd ==='pwd1' || isAuthorized ){
-// //     console.log('Welcome user OR OPERATOR ' + user)
-// // }
+// // arr[2] = 'Some value';
 
+// // // console.log(arr);
 
-// // // OR 
 
-// // // T T --> T
-// // // F T --> T
-// // // T F --> T
-// // // F F --> F
+// // let size = arr.length;
 
+// // // console.log(size);
 
-// // Arrays in JS
+// // let index = arr.indexOf('Kartik');
 
-// let a = 10;
-// let b = 20;
-// let c = 30;
+// // // console.log(index);
 
-// let name ='Kartik';
+// // // Stack-- First in Last out
 
-// let arr = [10,20,30,40,50,'Kartik',true];
+// // //Queues -- First in First Out
 
-// // console.log(arr);
 
-// // console.log(arr[4]);
+// // // arr.push(100);
 
-// arr[2] = 'Some value';
+// // // console.log(arr)
 
-// // console.log(arr);
+// // // arr.pop();
 
+// // // console.log(arr);
 
-// let size = arr.length;
+// // // arr.unshift(100); // Add Element add the first index
 
-// // console.log(size);
+// // // console.log(arr);
 
-// let index = arr.indexOf('Kartik');
+// // // arr.shift();    
 
-// // console.log(index);
+// // // console.log(arr);
 
-// // Stack-- First in Last out
 
-// //Queues -- First in First Out
+// // // let arr1 = [];
 
+// // // arr1[0] = 'Apple';
+// // // arr1[1] = 'Orange';
 
-// // arr.push(100);
+// // // console.log(arr1);
 
-// // console.log(arr)
+// // // let num = new Array(1,2,3,4,5);
+// // // console.log(num)
 
-// // arr.pop();
 
-// // console.log(arr);
+// // // let fruits = ['Apple','Banana','Orange','Kiwi'];
 
-// // arr.unshift(100); // Add Element add the first index
+// // // fruits.splice(1,1,'Watermelon');
+// // // console.log(fruits);
 
-// // console.log(arr);
+// // // let data = [
+// // //     {name:'Kartik',id:1,address:'Pune'},
+// // //     {name:'Rahul',id:2,address:'Bangalore'},
+// // //     {name:'Shubham',id:3,address:'Mumbai'}
+// // // ]
 
-// // arr.shift();    
+// // //console.log(data);
 
-// // console.log(arr);
+// // // Loops
+// // /**
+// //  * 1. while
+// //  * 2. Do While
+// //  * 3. for Loop
+// //  * 4. for in Loop
+// //  * 5. for of Loop
+// //  * 6. forEach Loop
+// //  */
 
-
-// // let arr1 = [];
-
-// // arr1[0] = 'Apple';
-// // arr1[1] = 'Orange';
-
-// // console.log(arr1);
-
-// // let num = new Array(1,2,3,4,5);
-// // console.log(num)
-
-
-// // let fruits = ['Apple','Banana','Orange','Kiwi'];
-
-// // fruits.splice(1,1,'Watermelon');
-// // console.log(fruits);
-
-// // let data = [
-// //     {name:'Kartik',id:1,address:'Pune'},
-// //     {name:'Rahul',id:2,address:'Bangalore'},
-// //     {name:'Shubham',id:3,address:'Mumbai'}
-// // ]
-
-// //console.log(data);
-
-// // Loops
-// /**
-//  * 1. while
-//  * 2. Do While
-//  * 3. for Loop
-//  * 4. for in Loop
-//  * 5. for of Loop
-//  * 6. forEach Loop
-//  */
-
-// // 1. while Loop
-
-// /**
-//  * 
-//  *  initialize a variable
-//  * while(<condition>){
-//  * 
-//  * Inc/Dec
-//  * }
-//  */
-
-// // let i = 6;
-
-// // while(i<5){
-// //     console.log('value of i is ' , i);
-// //     i++;
-// // }
-
-// // 2. Do while loop
-
-// /**
-//  * 
-//  * initialize a var
-//  * 
-//  * do {
-//  * Inc/Dec
-//  * }while(<condition>)
-//  * 
-//  */
-
-// // let i = 6;
-
-// // do {
-// //     console.log('value of i using do while is ' , i)
-// //     i++;
-// // }while(i<5);
-
-// // 3. for Loop
-
-// /**
-//  * 
-//  * for (init;condition;inc/dec){
-//  * 
-//  * }
-//  * 
-//  */
-
-// // i = i - 1;
-
-// // debugger;
-// // for(let i = 10; i > 0 ; i--){
-// //     console.log('value of i is ', i );
-// // }
-
-
-
-
-
-// // let person = { name:'Kartik', age: 30, city:'Pune'}
-// // let person2 = {};
-
-
-// // for in loop
-// /**
-//  * 
-//  * 
-//  * for (let key in object){
-//  * 
-//  * }
-//  * 
-//  */
-
-
-// // for (let key in person ){
-// //     console.log('key is ', key + ' value is ' , person[key]);
-// // }
-
-// // 5. for of Loop
-
-
-// // let fruits = ['Apple','Orange','Banana','WaterMelon'];
-
+// // // 1. while Loop
 
 // // /**
 // //  * 
-// //  * for (let value of Arrrayofitems){
+// //  *  initialize a variable
+// //  * while(<condition>){
+// //  * 
+// //  * Inc/Dec
+// //  * }
+// //  */
+
+// // // let i = 6;
+
+// // // while(i<5){
+// // //     console.log('value of i is ' , i);
+// // //     i++;
+// // // }
+
+// // // 2. Do while loop
+
+// // /**
+// //  * 
+// //  * initialize a var
+// //  * 
+// //  * do {
+// //  * Inc/Dec
+// //  * }while(<condition>)
+// //  * 
+// //  */
+
+// // // let i = 6;
+
+// // // do {
+// // //     console.log('value of i using do while is ' , i)
+// // //     i++;
+// // // }while(i<5);
+
+// // // 3. for Loop
+
+// // /**
+// //  * 
+// //  * for (init;condition;inc/dec){
+// //  * 
+// //  * }
+// //  * 
+// //  */
+
+// // // i = i - 1;
+
+// // // debugger;
+// // // for(let i = 10; i > 0 ; i--){
+// // //     console.log('value of i is ', i );
+// // // }
+
+
+
+
+
+// // // let person = { name:'Kartik', age: 30, city:'Pune'}
+// // // let person2 = {};
+
+
+// // // for in loop
+// // /**
+// //  * 
+// //  * 
+// //  * for (let key in object){
+// //  * 
+// //  * }
+// //  * 
+// //  */
+
+
+// // // for (let key in person ){
+// // //     console.log('key is ', key + ' value is ' , person[key]);
+// // // }
+
+// // // 5. for of Loop
+
+
+// // // let fruits = ['Apple','Orange','Banana','WaterMelon'];
+
+
+// // // /**
+// // //  * 
+// // //  * for (let value of Arrrayofitems){
+// // //  * 
+// // //  * }
+// // //  * 
+// // //  * 
+// // //  */
+
+// // // for(let fruit in fruits){
+// // //     console.log('index is ', fruit + ' value is ', fruits[fruit]);
+// // // }// Not recommended
+
+
+// // // for (let value of fruits){
+// // //     console.log(value);
+// // // } // Recommended
+
+
+
+// // // let data = [
+// // //     {name:'Kartik',id:1,address:'Pune'},
+// // //     {name:'Rahul',id:2,address:'Bangalore'},
+// // //     {name:'Shubham',id:3,address:'Mumbai'}
+// // // ]
+
+
+// // // for(let person of data){
+// // //     console.log(person.name, person.address);
+// // // }
+
+
+// // // 6. forEach Loop
+
+// // // let fruits = ['Apple','Orange','Banana','WaterMelon'];
+
+// // // fruits.forEach(s => {
+// // //     console.log(s)
+// // // })
+
+
+
+// // // Functions
+// // /**
+// //  * 
+// //  * 
+// //  *  One Function should do one specific.It should not do more than one task which is assigned to it
+// //  */
+
+// // // 2 Types of Functions
+// // /**
+// //  * 
+// //  * Inbuilt / Predefined Functions
+// //  * 
+// //  * User Defined Functions
+// //  */
+
+// // // How to create a fn
+// // /**
+// //  *  () ---> parenthesis
+// //  *  function nameOfFunction(arguments){
+// //  * 
+// //  * 
+// //  * 
 // //  * 
 // //  * }
 // //  * 
 // //  * 
+// //  * nameOfFunction(parameters)
+// //  * 
+// //  * 
 // //  */
 
-// // for(let fruit in fruits){
-// //     console.log('index is ', fruit + ' value is ', fruits[fruit]);
-// // }// Not recommended
+
+// // // function add(){
+// // //     console.log('Addition Function');
+// // // }
+
+// // // add();
 
 
-// // for (let value of fruits){
-// //     console.log(value);
-// // } // Recommended
+// // function substract(a,b){
+// //     let c = a-b;
+// //     console.log(c);
+// // }
 
+// // // substract(10,5);
 
+// // //Camel Casing getDataFromDatabase() JS , Java , python
+// // //Pascal Casing GetDataFromDatabase C#
 
-// // let data = [
-// //     {name:'Kartik',id:1,address:'Pune'},
-// //     {name:'Rahul',id:2,address:'Bangalore'},
-// //     {name:'Shubham',id:3,address:'Mumbai'}
-// // ]
+// // function getDataFromDatabase(){
 
-
-// // for(let person of data){
-// //     console.log(person.name, person.address);
 // // }
 
 
-// // 6. forEach Loop
+// // // function add(a,b){
 
-// // let fruits = ['Apple','Orange','Banana','WaterMelon'];
+// // //     let c = a + b;
 
-// // fruits.forEach(s => {
-// //     console.log(s)
-// // })
+// // //     let subs = a - b;
 
+// // //     console.log(subs);
+// // //     return c;
+// // // }
 
+// // // let d = add(10,5);
 
-// // Functions
-// /**
-//  * 
-//  * 
-//  *  One Function should do one specific.It should not do more than one task which is assigned to it
-//  */
-
-// // 2 Types of Functions
-// /**
-//  * 
-//  * Inbuilt / Predefined Functions
-//  * 
-//  * User Defined Functions
-//  */
-
-// // How to create a fn
-// /**
-//  *  () ---> parenthesis
-//  *  function nameOfFunction(arguments){
-//  * 
-//  * 
-//  * 
-//  * 
-//  * }
-//  * 
-//  * 
-//  * nameOfFunction(parameters)
-//  * 
-//  * 
-//  */
+// // // console.log(d);
 
 
-// // function add(){
-// //     console.log('Addition Function');
-// // }
-
-// // add();
-
-
-// function substract(a,b){
-//     let c = a-b;
-//     console.log(c);
-// }
-
-// // substract(10,5);
-
-// //Camel Casing getDataFromDatabase() JS , Java , python
-// //Pascal Casing GetDataFromDatabase C#
-
-// function getDataFromDatabase(){
-
-// }
+// // // Arrow Function  --> ES6
 
 
 // // function add(a,b){
-
 // //     let c = a + b;
-
-// //     let subs = a - b;
-
-// //     console.log(subs);
 // //     return c;
 // // }
 
-// // let d = add(10,5);
-
-// // console.log(d);
-
-
-// // Arrow Function  --> ES6
-
-
-// function add(a,b){
-//     let c = a + b;
-//     return c;
-// }
 
 
 
+// // // let add = (a,b) =>  a + b 
 
-// // let add = (a,b) =>  a + b 
+// // let value = add(5,6);
 
-// let value = add(5,6);
+// // // console.log(value)
 
-// // console.log(value)
+// // // CallBack
 
-// // CallBack
-
-// // function show(value){
-// // console.log(value);
-// // }
+// // // function show(value){
+// // // console.log(value);
+// // // }
 
 
-// // function call(somefn){
+// // // function call(somefn){
     
-// //     somefn(name);
+// // //     somefn(name);
+// // // }
+
+// // // function exec(){
+// // //     call(show('Kartik'))
+// // // }
+
+// // // debugger;
+// // // exec();
+
+// // // function proccessData(data){
+// // //     console.log('processing data....', data);
+// // //     return data;
+// // // }
+
+// // // function showData(data){
+// // // console.log('Showing data... ', data);
+// // // }
+
+// // // function getData(){
+// // //     return [
+// // //             {name:'Kartik',id:1,address:'Pune'},
+// // //             {name:'Rahul',id:2,address:'Bangalore'},
+// // //             {name:'Shubham',id:3,address:'Mumbai'}
+// // //         ];
+// // // }
+
+// // // function feature(callback){
+// // //     console.log('Inside the feature function')
+// // //     callback();
+// // // }
+
+// // // // Anonymous Function
+// // //  //() => console.log();
+// // // debugger;
+
+// // // feature( ()=>{
+// // //     let processed = proccessData(getData());
+// // //     showData(processed);
+// // // } )
+
+// // // Events in Javascripts
+
+// // function add(){
+
 // // }
 
-// // function exec(){
-// //     call(show('Kartik'))
+// // function show(){
+// //     console.log('onFocus clicked!')
 // // }
 
-// // debugger;
-// // exec();
-
-// // function proccessData(data){
-// //     console.log('processing data....', data);
-// //     return data;
+// // function customblur(){
+// //     console.log('This is event Blur!')
 // // }
 
-// // function showData(data){
-// // console.log('Showing data... ', data);
-// // }
 
-// // function getData(){
-// //     return [
-// //             {name:'Kartik',id:1,address:'Pune'},
-// //             {name:'Rahul',id:2,address:'Bangalore'},
-// //             {name:'Shubham',id:3,address:'Mumbai'}
-// //         ];
-// // }
+// // function validate(){
 
-// // function feature(callback){
-// //     console.log('Inside the feature function')
-// //     callback();
-// // }
+// //     let name = document.getElementById('name');
 
-// // // Anonymous Function
-// //  //() => console.log();
-// // debugger;
-
-// // feature( ()=>{
-// //     let processed = proccessData(getData());
-// //     showData(processed);
-// // } )
-
-// // Events in Javascripts
-
-// function add(){
-
-// }
-
-// function show(){
-//     console.log('onFocus clicked!')
-// }
-
-// function customblur(){
-//     console.log('This is event Blur!')
-// }
-
-
-// function validate(){
-
-//     let name = document.getElementById('name');
-
-//     console.log(name.value);
+// //     console.log(name.value);
     
-//     if(name.value === ''){
-//         return false 
-//     }
+// //     if(name.value === ''){
+// //         return false 
+// //     }
 
-//     if(name.value.length <3){
-//         console.log('Name should be more than 3 characters');
+// //     if(name.value.length <3){
+// //         console.log('Name should be more than 3 characters');
 
-//         document.getElementById('error').style.display = 'block';
+// //         document.getElementById('error').style.display = 'block';
 
-//         return false;
-//     }
-//     }   
-
-
+// //         return false;
+// //     }
+// //     }   
 
 
-//     // URL 
+
+
+// //     // URL 
     
-// // http://127.0.0.1:5501/success.html   ?name=KArtik&eid=katik.ks%40gmail.com&mnum=9232328&add=csdj -- URL
-// // protocol://domain/route?QS
+// // // http://127.0.0.1:5501/success.html   ?name=KArtik&eid=katik.ks%40gmail.com&mnum=9232328&add=csdj -- URL
+// // // protocol://domain/route?QS
 
-// // ?name=KArtik&eid=katik.ks%40gmail.com&mnum=9232328&add=csdj ---> Query String
-
-
-// // name=KArtik   ---> Query Parameters
-// // &
-// // eid=katik.ks%40gmail.com
-// // &
-// // mnum=9232328&add=csdj
+// // // ?name=KArtik&eid=katik.ks%40gmail.com&mnum=9232328&add=csdj ---> Query String
 
 
-
-
-// // https://www.google.com/search?q=html&oq=html&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIKCAEQABixAxiABDIKCAIQABixAxiABDIKCAMQABixAxiABDIKCAQQABixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBBzc5NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
+// // // name=KArtik   ---> Query Parameters
+// // // &
+// // // eid=katik.ks%40gmail.com
+// // // &
+// // // mnum=9232328&add=csdj
 
 
 
-// // Regex  --> Regular Expressions
 
-// // to search in the string
+// // // https://www.google.com/search?q=html&oq=html&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIKCAEQABixAxiABDIKCAIQABixAxiABDIKCAMQABixAxiABDIKCAQQABixAxiABDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBBzc5NmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8
 
-// // Pattern
-// //https://regexr.com/
+
+
+// // // Regex  --> Regular Expressions
+
+// // // to search in the string
+
+// // // Pattern
+// // //https://regexr.com/
+
+// // /**
+// //  * 
+// //  * test()
+// //  * match()
+// //  * replace()
+// //  * 
+// //  * 
+// //  */
+
+
+
+// // flag --> is used to enhace the searching.. 
+
+
+// // let pattern  = /hello/i;
+
+// // let text = "Hello world";
+
+// // let result = pattern.test(text)
+
+// // console.log(result);
+
+
+// let text = "hello Hello  HELLO"
+
+// // match()
+
+// // console.log(text.match(/hello/gi));
+
+
+// let sentence = "I like cats and Cats cats are cute";
+
+
+// //  console.log(sentence.match(/cats/gi));
+
+// // //replace 
+
+// // let replacedValue = sentence.replace(/cats/gi,"dogs");
+
+// // console.log(replacedValue);
+
+// // Metacharacters --> 
+
+// // \d -> digits , \w --> word \s ---> whitespace . --> characters without a newline
+
+
+
+
+// // Mobile Number pattern
+
+
+// // 6 7 8 9 /[6-9]\d{9}/
+
+
+// let mobileNumberPattern = /^[6-9]\d{9}$/;
+
+
+// let textt = "9876543210";
+
+// // let result = textt.match(mobileNumberPattern);
+
+// // console.log('Result ', result);
+
+
+// // PAN Number Pattern
 
 // /**
 //  * 
-//  * test()
-//  * match()
-//  * replace()
-//  * 
-//  * 
+//  *  5 Characters 
+//  *  4 Digits
+//  *  1 Character
 //  */
 
+// let panNumberPattern =  /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/;
+
+// let panNumber = 'ABCDDE1234F';
+
+// let result = panNumber.match(panNumberPattern)
+
+// console.log('Result ', result);
 
 
-// flag --> is used to enhace the searching.. 
+// OOPS in JS  --> Object Oriented Programming Structure ---> Bottom up Approach
+// POPS in JS  --> Procedure Oriented Programming Structure  --> Top to Down Approach
+
+// Object Based Programming Language
+// Pure Object Oriented Programming Structure -- Scala Language
+
+// Pillars of OOPS
+/**
+ * 
+ * Encapsulation
+ * Abstraction
+ * Inheritence
+ * Polymorphism
+ * 
+ * Classes and Objects
+ */
 
 
-// let pattern  = /hello/i;
+let person = {
 
-// let text = "Hello world";
-
-// let result = pattern.test(text)
-
-// console.log(result);
-
-
-let text = "hello Hello  HELLO"
-
-// match()
-
-// console.log(text.match(/hello/gi));
-
-
-let sentence = "I like cats and Cats cats are cute";
-
-
-//  console.log(sentence.match(/cats/gi));
-
-// //replace 
-
-// let replacedValue = sentence.replace(/cats/gi,"dogs");
-
-// console.log(replacedValue);
-
-// Metacharacters --> 
-
-// \d -> digits , \w --> word \s ---> whitespace . --> characters without a newline
+};
 
 
 
 
-// Mobile Number  pattern
 
-
-let mobileNumberPattern = /^[6-9]\d{9}$/;
-
-
-let textt = "9876543210";
-
-let result = textt.match(mobileNumberPattern);
-
-console.log('Result ', result);
