@@ -714,13 +714,51 @@
 
 
 
-
-let pattern  = /hello/i;
-
-let text = "Hello world";
+// flag --> is used to enhace the searching.. 
 
 
-let result = pattern.test(text)
+// let pattern  = /hello/i;
 
-console.log(result);
+// let text = "Hello world";
 
+// let result = pattern.test(text)
+
+// console.log(result);
+
+
+let text = "hello Hello  HELLO"
+
+// match()
+
+// console.log(text.match(/hello/gi));
+
+
+let sentence = "I like cats and Cats cats are cute";
+
+
+//  console.log(sentence.match(/cats/gi));
+
+// //replace 
+
+// let replacedValue = sentence.replace(/cats/gi,"dogs");
+
+// console.log(replacedValue);
+
+// Metacharacters --> 
+
+// \d -> digits , \w --> word \s ---> whitespace . --> characters without a newline
+
+
+
+
+// Mobile Number  pattern
+
+
+let mobileNumberPattern = /^[6-9]\d{9}$/;
+
+
+let textt = "9876543210";
+
+let result = textt.match(mobileNumberPattern);
+
+console.log('Result ', result);
