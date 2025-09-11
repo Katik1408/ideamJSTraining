@@ -788,7 +788,7 @@
 // OOPS in JS  --> Object Oriented Programming Structure ---> Bottom up Approach
 // POPS in JS  --> Procedure Oriented Programming Structure  --> Top to Down Approach
 
-// Object Based Programming Language
+// Object Based Programming Language -- C++
 // Pure Object Oriented Programming Structure -- Scala Language
 
 // Pillars of OOPS
@@ -803,11 +803,92 @@
  */
 
 
-let person = {
+// Encapsulation ---> Wrapping of data into one single place or unit
+//  Classes are the implementation of Encapsulation
 
+// Objects ---> Real world Entity / Something which actually exists in the world
+
+/**
+ * 
+ *  class --> Car  
+ * Objects ---> Ford Figo , Tata Safari
+ * 
+ * 
+ */
+
+
+let person = {
+name: 'Kartik',
+age : 30,
+display: function(){
+console.log(this.name, this.age);
+}
 };
 
 
+person.display()
+
+// this is a keyword in js which hold the object of current scope or context
+
+
+console.log(this);
+
+
+// Class in Vanilla JS / OLD JS 
+// Class is blueprint of the object / Classes are the collection of data members (variables) 
+// and member functions (functions / methods)
+
+// Constructor
+/**
+ * Constructor is a defualt function in JS which runs as soons as the object of a class is created in the memory 
+ * Contrustor is used to initialze the data members or variables of the class
+ * Constructor has the same name as the name of the class
+*/
+
+function Car(brand,model){
+this.brand = brand;
+this.model = model;
+this.drive = function() {
+console.log(this.brand, this.model)
+}
+this.stereo = function(){
+
+}
+}
+
+const car1 = new Car('Ford','Figo'); // Object creation
+
+car1.drive()  // Message Passing Operator
+
+console.log(car1)
+
+const car2 = new Car('Tata','Safari');
+console.log(car2)
+
+
+// Creating Class with the help of Prototype
+
+
+function CarWP(brand , model){
+this.brand = brand,
+this.model  = model
+}
+
+CarWP.prototype.drivewp = function () {
+    console.log('With Prototype', this.brand, this.model)
+}
+CarWP.prototype.newobj = [];
+
+const carwp1 = new CarWP('Maruti','Alto');
+
+console.log('Class with proto',carwp1);
+
+// Prototype are more memory efficient in JS 
+
+const carwp2 = new CarWP('Kia','Seltos');
 
 
 
+console.log(car1.drive === car2.drive) // this uses different memory spaces
+
+console.log(carwp1.drive === carwp2.drive) // this uses same memory spaces
