@@ -206,11 +206,11 @@
 // // // //     case 2:
 // // // //         console.log('Tuesday')
 // // // //         break;
-        
+
 // // // //     case 3:
 // // // //         console.log('Wednesday')
 // // // //         break;
-       
+
 // // // //     default:
 // // // //         console.log('Some other day')        
 // // // // }
@@ -224,7 +224,7 @@
 // // // // let isAuthorized = false;
 
 // // // // if(pwd === 'pwd'){
-    
+
 // // // //     if(isAuthorized){
 // // // //         console.log('Welcome User',user)
 // // // //         if(false){
@@ -596,7 +596,7 @@
 
 
 // // // function call(somefn){
-    
+
 // // //     somefn(name);
 // // // }
 
@@ -658,7 +658,7 @@
 // //     let name = document.getElementById('name');
 
 // //     console.log(name.value);
-    
+
 // //     if(name.value === ''){
 // //         return false 
 // //     }
@@ -676,7 +676,7 @@
 
 
 // //     // URL 
-    
+
 // // // http://127.0.0.1:5501/success.html   ?name=KArtik&eid=katik.ks%40gmail.com&mnum=9232328&add=csdj -- URL
 // // // protocol://domain/route?QS
 
@@ -817,21 +817,21 @@
  */
 
 
-let person = {
-name: 'Kartik',
-age : 30,
-display: function(){
-console.log(this.name, this.age);
-}
-};
+// let person = {
+//     name: 'Kartik',
+//     age: 30,
+//     display: function () {
+//         console.log(this.name, this.age);
+//     }
+// };
 
 
-person.display()
+// person.display()
 
 // this is a keyword in js which hold the object of current scope or context
 
 
-console.log(this);
+// console.log(this);
 
 
 // Class in Vanilla JS / OLD JS 
@@ -845,50 +845,175 @@ console.log(this);
  * Constructor has the same name as the name of the class
 */
 
-function Car(brand,model){
-this.brand = brand;
-this.model = model;
-this.drive = function() {
-console.log(this.brand, this.model)
+// function Car(brand, model) {
+//     this.brand = brand;
+//     this.model = model;
+//     this.drive = function () {
+//         console.log(this.brand, this.model)
+//     }
+//     this.stereo = function () {
+
+//     }
+// }
+
+// const car1 = new Car('Ford','Figo'); // Object creation
+
+// car1.drive()  // Message Passing Operator
+
+// console.log(car1)
+
+// const car2 = new Car('Tata','Safari');
+// console.log(car2)
+
+
+// // Creating Class with the help of Prototype
+
+
+// function CarWP(brand , model){
+// this.brand = brand,
+// this.model  = model
+// }
+
+// CarWP.prototype.drivewp = function () {
+//     console.log('With Prototype', this.brand, this.model)
+// }
+// CarWP.prototype.newobj = [];
+
+// const carwp1 = new CarWP('Maruti','Alto');
+
+// console.log('Class with proto',carwp1);
+
+// // Prototype are more memory efficient in JS 
+
+// const carwp2 = new CarWP('Kia','Seltos');
+
+
+
+// console.log(car1.drive === car2.drive) // this uses different memory spaces
+
+// console.log(carwp1.drive === carwp2.drive) // this uses same memory spaces
+
+
+
+// Class in Modern JS / ES6 ECMAScript 2015  -- Encapsulation
+
+
+// class Car {
+
+//     constructor(brand, model) {
+//         this.brand = brand,
+//         this.model = model
+//     }
+
+//     drive(){
+//         console.log('Driving the Car ', this.brand,this.model)
+//     }
+
+// }
+
+// const car1 = new Car('Ford','Figo');
+
+// car1.drive();
+
+
+
+// console.log(car1.brand)
+
+
+// Abstraction  --- Hiding the data from the outer world / Hiding the irrelevent data from the user
+
+
+// class BankAccount{
+//     #accountBalance;
+
+    
+//     constructor(owner,balance){
+//         this.owner = owner,
+//         this.#accountBalance = balance
+//     }
+
+//     getBalance(){
+//         // let a = 10;
+//         console.log('Balance is ', this.#accountBalance);
+//     }
+
+// }
+
+// const ba = new BankAccount('Rahul',300);
+
+// ba.getBalance();
+
+// console.log(ba.#accountBalance);
+
+
+// class A {
+
+// }
+// JS --> TS private protected
+
+// let a  = 10; 
+
+// .s    private public protected . Not Available in JS but in TS   typesafety 
+
+// Inheritence  --  A Class inherits the properties of its base class or parent class
+
+
+class Car {
+
+    constructor(brand,model){
+        this.brand = brand,
+        this.model = model
+    }
+
+    start(){
+        console.log('Inside Car Start');
+    }
 }
-this.stereo = function(){
+
+
+class ElectricCar extends Car  {
+
+    constructor(currentChargePercentae){
+
+        super('Tata','Punch')
+
+        this.currentChargePercentae = currentChargePercentae
+    }
+
+    chargeBattery(){
+        console.log('ChageBattery');
+    }
 
 }
+
+
+const ec = new ElectricCar(10);
+
+ec.chargeBattery();
+ec.start()
+
+
+
+class HybridCar extends ElectricCar {
+
 }
 
-const car1 = new Car('Ford','Figo'); // Object creation
-
-car1.drive()  // Message Passing Operator
-
-console.log(car1)
-
-const car2 = new Car('Tata','Safari');
-console.log(car2)
-
-
-// Creating Class with the help of Prototype
-
-
-function CarWP(brand , model){
-this.brand = brand,
-this.model  = model
-}
-
-CarWP.prototype.drivewp = function () {
-    console.log('With Prototype', this.brand, this.model)
-}
-CarWP.prototype.newobj = [];
-
-const carwp1 = new CarWP('Maruti','Alto');
-
-console.log('Class with proto',carwp1);
-
-// Prototype are more memory efficient in JS 
-
-const carwp2 = new CarWP('Kia','Seltos');
 
 
 
-console.log(car1.drive === car2.drive) // this uses different memory spaces
+// class FuelCar extends Car {
 
-console.log(carwp1.drive === carwp2.drive) // this uses same memory spaces
+//     constructor(currentFuelLeft){
+//         this.currentFuelLeft = currentFuelLeft
+//     }
+
+//     fuelCapacity(){
+
+//     }
+
+
+// }
+
+
+
+// Polymorphism
