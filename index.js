@@ -958,47 +958,48 @@
 // Inheritence  --  A Class inherits the properties of its base class or parent class
 
 
-class Car {
+// class Car {
 
-    constructor(brand,model){
-        this.brand = brand,
-        this.model = model
-    }
+//     constructor(brand,model){
+//         this.brand = brand,
+//         this.model = model
+//     }
 
-    start(){
-        console.log('Inside Car Start');
-    }
-}
-
-
-class ElectricCar extends Car  {
-
-    constructor(currentChargePercentae){
-
-        super('Tata','Punch')
-
-        this.currentChargePercentae = currentChargePercentae
-    }
-
-    chargeBattery(){
-        console.log('ChageBattery');
-    }
-
-}
+//     start(){
+//         console.log('Inside Car Start');
+//     }
+// }
 
 
-const ec = new ElectricCar(10);
+// class ElectricCar extends Car  {
 
-ec.chargeBattery();
-ec.start()
+//     constructor(brand,model,currentChargePercentae){
+
+//        super(brand,model)
+
+//         this.currentChargePercentae = currentChargePercentae
+//     }
+
+//     chargeBattery(){
+//         console.log('ChageBattery');
+//     }
+
+// }
+
+
+// const ec = new ElectricCar(10);
+
+// const ec2 = new ElectricCar('Tata','Punch',20);
+
+
+// ec.chargeBattery();
+// ec.start()
 
 
 
-class HybridCar extends ElectricCar {
+// class HybridCar extends ElectricCar {
 
-}
-
-
+// }
 
 
 // class FuelCar extends Car {
@@ -1016,4 +1017,97 @@ class HybridCar extends ElectricCar {
 
 
 
-// Polymorphism
+// Polymorphism --- Poly means --> Many  and morphism --> forms
+// 2 Types of Polymorphism -
+/**
+ * 
+ * Method Overloading  --- X 
+ * Method Overriding
+ */
+
+// Method Overloading
+class A {
+
+
+    add(a,b,c,d){
+        return a+b+c+d
+    }
+
+    add (a,b,c){
+
+        console.log(c)
+        if(c!=undefined)
+        return a+b+c;
+        else 
+        return a+b;
+    }
+
+}
+
+const aObj = new A();
+
+console.log(aObj.add(1,2));
+
+
+
+// Method Overriding
+
+class Car {
+
+    constructor(brand,model){
+        this.brand = brand,
+        this.model = model
+    }
+
+    start(){
+        console.log('Car is Starting...');
+    }
+}
+
+
+class ElectricCar extends Car  {
+
+    constructor(brand,model,currentChargePercentae){
+
+       super(brand,model)
+
+        this.currentChargePercentae = currentChargePercentae
+    }
+
+
+    start(){
+
+        super.start();
+
+        console.log('Noiseless');
+    }
+
+
+
+    chargeBattery(){
+        console.log('ChageBattery');
+    }
+
+}
+
+
+class FuelCar extends Car {
+    start(){
+
+        super.start()
+
+        console.log('with some noise');
+    }
+}
+
+
+
+
+const ec = new ElectricCar(10);
+ec.chargeBattery();
+ec.start();
+
+
+const fc = new FuelCar();
+
+fc.start();
